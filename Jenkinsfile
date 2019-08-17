@@ -5,6 +5,9 @@ pipeline {
             steps {
                 // Download the code
                 checkout scm
+                sh 'pwd'
+                sh 'ls -al /home/*'
+                sh 'ls -al /usr/bin/*'
             }
         }
         stage('Test') {
