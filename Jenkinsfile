@@ -6,8 +6,9 @@ pipeline {
                 // Download the code
                 checkout scm
                 sh 'pwd'
-                sh 'ls -al /home/*'
+                sh 'whoami'
                 sh 'ls -al /usr/bin/*'
+                sh 'ls -al /bin/*'
             }
         }
         stage('Test') {
